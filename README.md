@@ -9,5 +9,3 @@ At the moment there are no models implemented, just a simple hello world.
 
 
 More functionalities may be added later.
-
-Also there is no requirements.txt added just yet
