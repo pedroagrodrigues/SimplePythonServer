@@ -1,3 +1,10 @@
 .vscode/settings.json
 .vscode/.ropeproject/config.py
 .vscode/.ropeproject/objectdb
+.vscode/launch.json
+__pycache__/run.cpython-38.pyc
+app/controllers/__pycache__/__init__.cpython-38.pyc
+app/controllers/__pycache__/home.cpython-38.pyc
+app/controllers/__pycache__/page_loader.cpython-38.pyc
+settings/__pycache__/config.cpython-38.pyc
+app/__pycache__/__init__.cpython-38.pyc
