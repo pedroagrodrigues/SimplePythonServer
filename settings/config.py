@@ -1,13 +1,19 @@
 #initialization variables
 development = True
-#Becareful 0.0.0.0 as default is visible on your local network
-NameServer = "0.0.0.0:8080" 
+#Becareful 0.0.0.0 as default is visible on your 
+# local network with your device IP
+NameServer = "127.0.0.1:8080" 
 
 
 class Config(object):
     DEBUG = False
     TESTING = False
-    SERVER_NAME = NameServer
+
+    try:
+        SERVER_NAME = NameServer
+    except:
+        print("No Name Server defined using default at 127.0.0.1:5000")
+
     ENV = "production"
     
 
