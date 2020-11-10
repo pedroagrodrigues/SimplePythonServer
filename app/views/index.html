@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Hello world</title>
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+{% extends "base.html" %}
 
-</head>
-<body>
+{% block title %}API Hello world{% endblock %}
+{% block content %}
     <h1>This is a Hello World</h1>
-    <p>If you can see this, the view must be working properly</p>
-</body>
-</html>
+    <p>If you are seeing this the first setup is up and running</p>
+
+{% endblock %}

@@ -1,10 +1,17 @@
 from os import path
 from flask import Blueprint
-from app.controllers.home import home, favico
 
+# Controlers functions
+from app.controllers.cHome import home, favico
+from app.controllers.cUsers import login, user
 
 homeController = Blueprint('homeController', __name__, template_folder=path.abspath('app/views'))
 
-    
+# Routing 
+# Home page
 homeController.add_url_rule('/',view_func=home)
 homeController.add_url_rule('/favicon.ico', view_func=favico)
+
+#User related pages
+homeController.add_url_rule('/login/', view_func=login, methods=["POST","GET"])
+homeController.add_url_rule('/<usr>', view_func=user)

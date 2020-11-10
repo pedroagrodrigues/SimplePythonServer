@@ -1,5 +1,4 @@
 from flask import render_template, send_from_directory
-from os import path
 
 def home():
     return render_template("index.html")
