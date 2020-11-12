@@ -2,7 +2,6 @@ from flask import Flask, url_for
 from settings import config
 
 #Global variables
-
 server = Flask(__name__)
 
 if config.development:

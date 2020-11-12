@@ -7,4 +7,4 @@ app/controllers/__pycache__/*
 app/__pycache__/*
 app/models/__pycache__/*
 settings/__pycache__/*
-
+Scripts/__pycache__/*
