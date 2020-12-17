@@ -11,4 +11,5 @@ else:
 
 
 from app.controllers import homeController
+
 server.register_blueprint(homeController)
